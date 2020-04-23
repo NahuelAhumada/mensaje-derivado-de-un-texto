@@ -12,7 +12,10 @@ function elMensajePuedeRedactarse(texto, mensaje){
     for(let i =0;i<caracteres.length&&!resultado;i++){
         let valor=caracteres[i];
         if(mensaje.includes(valor)){
-
+            mensaje=mensaje.replace(valor,"");
+            if(mensaje.length==0){
+                resultado=true;
+            }
         }
     }
 }
