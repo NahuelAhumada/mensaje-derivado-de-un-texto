@@ -13,9 +13,9 @@ function elMensajePuedeRedactarse(texto, mensaje){
         let valor=caracteres[i];
         //Pre: El caracter esta contenido en el mensaje
         //Post: Borra el caracter del mensaje y continua hasta que el mensaje tengo 0 caracteres
-        if(mensaje.includes(valor)){
-            mensaje=mensaje.replace(valor,"");
-            if(mensaje.length==0){
+        if(mensajeEv.includes(valor)){
+            mensajeEv=mensajeEv.replace(valor,"");
+            if(mensajeEv.length==0){
                 resultado=true;
             }
         }
