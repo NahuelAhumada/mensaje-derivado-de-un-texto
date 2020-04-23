@@ -5,7 +5,8 @@ function elMensajePuedeRedactarse(texto, mensaje){
     }else if(mensaje.length>texto.length){
         return resultado;
     }
-    let textoEv=texto;
-    let mensajeEv=mensaje;
+    
+    let caracteres=texto.trim().toLowerCase();
+    let mensajeEv=mensaje.trim().toLowerCase();
 
 }
