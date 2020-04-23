@@ -21,4 +21,6 @@ function elMensajePuedeRedactarse(texto, mensaje){
         }
 
     }
+    console.log(resultado);
+    return resultado;
 }
